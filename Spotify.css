@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --little-black: #191a19;
+  --ff: "Radio Canada Big", sans-serif;
+  --fos: auto;
+  --fs: normal;
+  --fw: 500;
+  --grey-light: rgb(62, 61, 61);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.content {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.home {
+  margin: 5px;
+  height: 220px;
+  width: 340px;
+  background-color: var(--little-black);
+  border-radius: 5px;
+}
+
+.Spotify {
+  margin-top: 10px;
+  height: 80px;
+  width: 120px;
+}
+
+.home-btn {
+  display: block;
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-left: 5px;
+  font-family: var(--ff);
+  font-optical-sizing: var(--fos);
+  font-style: var(--fs);
+  font-weight: var(--fw);
+}
+
+.home-btn-img {
+  margin-right: 35px;
+}
+
+.search-btn {
+  display: block;
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-left: 5px;
+  font-family: var(--ff);
+  font-optical-sizing: var(--fos);
+  font-style: var(--fs);
+  font-weight: var(--fw);
+}
+
+.search-btn-img {
+  margin-top: 10px;
+  margin-right: 35px;
+}
+
+.lib {
+  margin: 5px;
+  height: 550px;
+  width: 340px;
+  background-color: var(--little-black);
+  border-radius: 5px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  width: 340px;
+  background-color: var(--little-black);
+  border-radius: 5px;
+}
+
+.lib-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-left: 5px;
+  font-family: var(--ff);
+  font-optical-sizing: var(--fos);
+  font-style: var(--fs);
+  font-weight: var(--fw);
+}
+
+.lib-btn-img {
+  margin-top: 1px;
+  margin-right: 35px;
+  height: 30px;
+}
+
+.crt-ply {
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+  color: transparent;
+}
+
+.lib-sec {
+  height: 245px;
+  width: 340px;
+  background-color: var(--little-black);
+  overflow: auto;
+}
+
+.lib-sec::-webkit-scrollbar {
+  width: 10px;
+}
+
+.lib-sec::-webkit-scrollbar-track {
+  background-color: var(--little-black);
+  border-radius: 10px;
+}
+
+.lib-sec::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.492);
+}
+
+.crt-ply-div {
+  height: 170px;
+  width: 315px;
+  margin-left: 10px;
+  background-color: var(--grey-light);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.brs-pds-div {
+  height: 170px;
+  width: 315px;
+  margin-left: 10px;
+  background-color: var(--grey-light);
+  border-radius: 5px;
+}
+
+.h4-text {
+  color: white;
+  padding: 30px 0px 15px 25px;
+}
+
+.p-text {
+  color: white;
+  padding: 0px 0px 15px 25px;
+}
+
+.btn {
+  margin: 10px 0px 0px 25px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 25px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.t2 {
+  font-size: 13px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  height: 145px;
+  width: 300px;
+  background-color: var(--little-black);
+}
+
+.links a {
+  text-align: center;
+  font-size: 10px;
+}
+
+a {
+  color: rgba(254, 254, 254, 0.485);
+}
+
+.lang {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.615);
+  color: white;
+}
+
+.lang-img {
+  margin-right: 35px;
+}
+
+.main {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-left: 350px;
+}
+
+.songs {
+  position: absolute;
+  height: auto;
+  width: 1160px;
+  background-color: var(--little-black);
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.nav {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.389);
+  justify-content: space-between;
+}
+
+.nav-btns {
+  display: flex;
+  height: 60px;
+  width: 75px;
+  justify-content: space-around;
+}
+
+.nav-btn {
+  background-color: black;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: none;
+}
+
+.log {
+  display: flex;
+  height: 60px;
+  width: 200px;
+  justify-content: space-around, center;
+}
+
+.sign-up {
+  border: none;
+  background-color: transparent;
+  color: grey;
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+.box {
+  position: absolute;
+  height: 255px;
+  width: 100%;
+  /* background-color: orangered; */
+  margin-top: 80px;
+}
+.b-two {
+  position: relative;
+  margin-top: 295px;
+}
+.b-three {
+  position: relative;
+  margin-top: 30px;
+}
+
+.div-links {
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  width: calc(100% - 30px);
+  padding: 0px 0px 0px 30px;
+  /* background-color: burlywood; */
+}
+
+.main-links {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  height: 205px;
+  width: 100%;
+  /* background-color: aqua; */
+}
+.imgs-div {
+  height: 200px;
+  width: 230px;
+  /* background-color: blueviolet; */
+}
+
+.img-i {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  translate: 30% 10%;
+}
+.names {
+  margin-top: 20px;
+  height: 20px;
+  width: 100%;
+  /* background-color: tomato; */
+}
+.p-text-t1 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+.ml {
+  color: gray;
+  font-size: 15px;
+  margin-right: 10px;
+}
+.img-two {
+  height: 140px;
+  width: 140px;
+  border-radius: 5px;
+  translate: 30% 10%;
+}
+
+body::-webkit-scrollbar{
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: black;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.492);
+}
+.footer{
+  height: 400px;
+  width: 100%;
+  background-color: var(--little-black);
+}
+.div-footer-links{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  /* background-color: yellow; */
+}
+
+.footer-div{
+  margin-left: 30px;
+  text-align: center;
+  height: 115px;
+  width: 200px;
+  /* background-color: var(--little-black); */
+}
+.h4-c{
+  color: white;
+  font-size: 20px;
+}
+
+.footer-links{
+  margin-top: 10px;
+  display: block;
+  color: rgba(137, 141, 144, 0.799);
+  font-weight: bold;
+}
+.communities{
+  margin-left: 0px;
+  height: 175px;
+}
+
+.u-l{
+  margin-left: 0px;
+  height: 90px;
+}
+.s-plans{
+  margin-left: 0px;
+  height: 180px;
+}
+.line{
+  margin: 10px 5px 0px 5px;
+  border: none;
+  height: 2px;
+  background-color: rgba(137, 141, 144, 0.799);
+}
+.cpr{
+  font-weight: bold;
+  margin: 20px 0px 0px 30px;
+  color: rgba(137, 141, 144, 0.799);
+}
